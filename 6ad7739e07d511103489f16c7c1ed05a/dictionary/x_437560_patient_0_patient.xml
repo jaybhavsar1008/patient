@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="Patient" max_length="40" name="x_437560_patient_0_patient" type="collection">
+        <element label="Assigned to" max_length="32" name="assigned_to" reference="sys_user" type="reference"/>
+        <element label="DOB" max_length="40" name="dob" type="glide_date"/>
+        <element label="Due date" max_length="40" name="due_date" type="due_date"/>
+        <element label="Email" max_length="100" name="email" type="string"/>
+        <element display="true" label="First name" max_length="40" name="first_name" type="string"/>
+        <element label="Last name" max_length="40" name="last_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
+        <element label="Patient case details" max_length="40" name="patient_case_details" type="journal"/>
+        <element label="Phone" max_length="40" name="phone" type="phone_number_e164"/>
+        <index name="index">
+            <element name="assigned_to"/>
+        </index>
+    </element>
+</database>
